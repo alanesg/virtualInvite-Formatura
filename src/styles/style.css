@@ -1,0 +1,98 @@
+@import url(./reset.css);
+@import url(./global.css);
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+/*animação do chapéu*/
+.chapeu_Formatura {
+    margin-right: 2rem;
+    width: 150px;
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.molduraleftsuper{
+    position: absolute;
+    top: 0.8rem;
+    left: 0.5rem;
+    height: 12rem;
+    width: auto;
+    margin: 0;
+    opacity: 0.3; 
+}
+
+.moldurarightinfer{
+    position: absolute;
+    bottom: 0.8rem;
+    right: 0.5rem;
+    height: 12rem;
+    width: auto;
+    margin: 0;
+    opacity: 0.3; 
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* padrão: lado a lado */
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 20px;
+}
+
+.container img {
+    width: 15rem;
+}
+
+.button a {
+  background: linear-gradient(270deg, #007BFF, #00C9FF, #007BFF);
+  background-size: 400% 400%;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  animation: gradientMove 5s ease infinite;
+}
+
+/*@keyframes é o coração das animações em CSS.
+É onde você define o passo a passo do movimento — tipo um roteiro que o 
+navegador segue pra fazer algo se mover, mudar de cor, desaparecer, etc.*/
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column; /* só no mobile */
+        margin-top: 3rem;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .container img {
+        width: 10rem;
+    }
+
+    .button {
+        margin: 0 auto;
+    }
+}

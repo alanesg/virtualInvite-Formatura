@@ -1,0 +1,65 @@
+@import url(/src/styles/style.css);
+
+
+.container{
+    margin-top:2rem;
+    margin-bottom: 2rem;
+    gap: 1.8rem;
+}
+
+.container h1, h2,
+ p, h3, h4{
+    color: var(--second-color);
+}
+
+.icone-voltar img {
+    position: absolute;
+    top: 15px;
+    right: 15px; /* ou left: 15px se quiser no outro lado */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.icone-voltar:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+.chapeudourado{
+    width: 120px;
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+.date {
+    padding: 15px 15px;
+    border: solid 2px var(--second-color);   
+}
+
+#botao-musica {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #889bf1;
+  color: white;
+  border: solid 1px white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  z-index: 50;
+}
+
+#botao-musica:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(251, 251, 252, 0.7);
+}
+
+#botao-musica img {
+  width: 20px;
+  height: 20px;
+}
+

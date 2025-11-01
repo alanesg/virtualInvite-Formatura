@@ -1,0 +1,16 @@
+/*IMPORT FONT GOOGLE*/
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One&family=Metrophobic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@200&display=swap');
+
+:root {
+    --primary-color: #1800ad;
+    --second-color: #ffbd59;
+}
+body {
+    background-color: #1800ad;
+    font-family: "Chau Philomene One";
+}
+
+.name h1{
+     font-family: "Playwrite US Trad", cursive;
+}
