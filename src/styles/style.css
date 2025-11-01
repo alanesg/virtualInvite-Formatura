@@ -1,12 +1,19 @@
 @import url(./reset.css);
 @import url(./global.css);
 
+html {
+  overflow: hidden; /* remove a barra de rolagem */
+  width: 100%;
+  height: 100%;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: var(--primary-color);
+    overflow: hidden;
 }
 
 /*animação do chapéu*/

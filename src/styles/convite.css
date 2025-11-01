@@ -11,15 +11,16 @@
  p, h3, h4{
     color: var(--second-color);
 }
+.icone-voltar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000; /* garante que fique acima de tudo */
+}
 
 .icone-voltar img {
-    position: absolute;
-    top: 15px;
-    right: 15px; /* ou left: 15px se quiser no outro lado */
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+  width: 40px;
+  cursor: pointer;
 }
 
 .icone-voltar:hover {
