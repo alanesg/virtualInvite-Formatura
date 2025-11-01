@@ -96,3 +96,60 @@ navegador segue pra fazer algo se mover, mudar de cor, desaparecer, etc.*/
         margin: 0 auto;
     }
 }
+
+/* === Tablets (min-width: 768px) === */
+@media (min-width: 768px) {
+  .container {
+    padding: 30px;
+  }
+
+  .chapeu_Formatura {
+    width: 160px;
+    margin-bottom: 25px;
+  }
+
+  .botao_A {
+    width: 130px;
+  }
+
+  .button a {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+  }
+
+  .molduraleftsuper,
+  .moldurarightinfer {
+    width: 100px;
+  }
+}
+
+/* === Desktop / PCs (min-width: 1024px) === */
+@media (min-width: 1024px) {
+  .container {
+    padding: 50px;
+    flex-direction: column;
+  }
+
+  .chapeu_Formatura {
+    width: 200px;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+
+  .botao_A {
+    width: 150px;
+    align-items: center;
+  }
+
+  .button a {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    align-items: center;
+  }
+
+  .molduraleftsuper,
+  .moldurarightinfer {
+    width: 120px;
+  }
+}
